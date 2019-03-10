@@ -26,11 +26,7 @@ gis.search(search_params=search_params)
 # this will search and download:
 gis.search(search_params=search_params, path_to_dir='/path/')
 
-# this will search, download and resize:
-gis.search(search_params=search_params, path_to_dir='/path/', width=500, height=500)
-
-# search first, then download and resize afterwards
+# search first, then download afterwards
 gis.search(search_params=search_params)
 for image in gis.results():
     image.download('/path/')
-    image.resize(500, 500)
