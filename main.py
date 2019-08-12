@@ -29,4 +29,5 @@ gis.search(search_params=search_params, path_to_dir='/path/')
 # search first, then download afterwards
 gis.search(search_params=search_params)
 for image in gis.results():
-    image.download('/path/')
+    image.download('/path/') 
+    
